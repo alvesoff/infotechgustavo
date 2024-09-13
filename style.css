@@ -1,0 +1,244 @@
+
+
+:root {
+    --cor-fundo: #000000;
+    --cor-texto-principal: #ffffff;
+    --cor-destaque: #1f73cd;
+    --cor-texto-secundario: #222222;
+}
+
+
+
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body{
+    background-color: var(--cor-fundo);
+    height: 100vh;
+}
+
+.interface{ 
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 35px 1%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: var(--cor-destaque);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: var(--cor-texto-principal);
+    transform: scale(1.05);
+
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--cor-destaque);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #007bff;
+}
+
+
+/* ESTILO TOPO SITE */
+
+section.topo-do-site {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 4%;
+}
+
+.post {
+    width: 30%;
+    border: 2px solid #007bff96;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(45, 89, 156, 0.849);
+    
+    
+}
+
+.post img {
+    width: 100%;
+    /*max-width: 400px;*/
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post img:hover {
+    transform: scale(1.05);
+}
+
+
+.post h1 {
+    color: var(--cor-texto-principal);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #007bffda, #fffffff3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.post p {
+    margin-bottom: 20px;
+    color: var(--cor-texto-principal);
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 1.8;
+    text-align: center;
+    text-align-last: center; /* Garante que a última linha também seja centralizada */
+    text-justify: inter-word; /* Justifica o texto entre as palavras */
+  }
+
+
+  /*NOVA SESSÃO*/ 
+
+  .new-section {
+    /* Remove a borda, se houver */
+    border: none;
+    margin-top: 30px;
+  }
+  
+  .new-section h2, p {
+    color: var(--cor-texto-principal);
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    /* Ajustar a largura conforme necessário */
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .text, .image {
+    flex: 1;
+    /* Centralizar o texto dentro de cada div */
+    text-align: center;
+  }
+  
+  .image img {
+    max-width: 100%;
+  }
+
+  .latest-news {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-texto-principal);
+    margin-bottom: 3px;
+    margin-top: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .Saiba {
+    background-color: var(--cor-destaque); /* Cor de fundo  */
+    color: white;
+    padding: 10px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .Saiba:hover {
+    background-color: #0004ff; /* Cor de fundo mais escuro no hover */
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  /*footer*/ 
+
+  footer {
+    background-color: #04041a8f;
+    color: #fff;
+    padding: 3px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col {
+    flex: 1;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #007bff; /* Azul claro */
+  }
+  
+  .social-media {
+    list-style: none;
+    display: flex;
+  }
+  
+  .social-media li {
+    margin-right: 10px;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
